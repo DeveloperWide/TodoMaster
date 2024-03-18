@@ -36,4 +36,4 @@ Contributions are welcome! If you'd like to contribute to TodoMaster, please fol
 
 ## Contact
 
-For any inquiries or feedback, please contact maheshrana9520@gmail.com.
+For any inquiries or feedback, please contact [maheshrana9520@gmail.com].
