@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>All Tasks</h3>
+        <br>
+        <hr>
+        <br>
+        <div class="task-list">
+            <% for (task of tasks) { %>
+                <div class="task-card">
+                    <h4 class="task-title">
+                        <%= task.title %>
+                    </h4>
+                    <p class="task-description">
+                        <%= task.description %>
+                    </p>
+                    <div class="task-details">
+                        <span class="task-date">
+                            <%= task.date %>
+                        </span>
+                    </div>
+                    <br>
+                    <div class="task-buttons">
+                        <form action="/tasks/<%=task._id%>/delete?_method=DELETE" method="POST"
+                            style="display: inline-block;">
+                            <button style="background-color: red;">Delete</button>
+                        </form>
+                        <form action="/tasks/<%=task._id%>" method="GET" style="display: inline-block;">
+                            <button>View</button>
+                        </form>
+                        <form action="/tasks/<%=task._id%>/update" method="GET" style="display: inline-block;">
+                            <button>Update</button>
+                        </form>
+                    </div>
+
+                </div>
+                <% } %>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <a href="/newtask" class="btn">Add New Task</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Task</title>
+    <link rel="stylesheet" href="/viewTask.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Task Details</h2>
+        <div class="task-details">
+            <p><strong>Title:</strong>
+                <%= task.title %>
+            </p>
+            <p><strong>Description:</strong>
+                <%= task.description %>
+            </p>
+            <p><strong>Date:</strong>
+                <%= task.date.toDateString() %>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
