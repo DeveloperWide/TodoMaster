@@ -1,0 +1,10 @@
+# Node Modules
+node_modules/
+
+# Environment Variables
+.env
+.env.local
+
+# Dependency directories
+lib/
+dist/
